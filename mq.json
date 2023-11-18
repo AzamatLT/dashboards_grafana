@@ -1,0 +1,3783 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": "-- Grafana --",
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "gnetId": null,
+  "graphTooltip": 1,
+  "id": 42,
+  "iteration": 1643718697252,
+  "links": [],
+  "panels": [
+    {
+      "aliasColors": {},
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": "mq",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {},
+          "links": []
+        },
+        "overrides": []
+      },
+      "fill": 1,
+      "fillGradient": 0,
+      "gridPos": {
+        "h": 12,
+        "w": 24,
+        "x": 0,
+        "y": 0
+      },
+      "hiddenSeries": false,
+      "id": 79,
+      "legend": {
+        "alignAsTable": true,
+        "avg": false,
+        "current": true,
+        "max": true,
+        "min": false,
+        "rightSide": true,
+        "show": true,
+        "sort": "current",
+        "sortDesc": true,
+        "total": false,
+        "values": true
+      },
+      "lines": true,
+      "linewidth": 1,
+      "nullPointMode": "null",
+      "options": {
+        "alertThreshold": true
+      },
+      "percentage": false,
+      "pluginVersion": "7.3.4",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "expr": "mqobject_queue_queue_depth_messages",
+          "hide": false,
+          "interval": "",
+          "legendFormat": "{{QMGR_NAME}} {{MQ_OBJECT_NAME}}",
+          "refId": "B"
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "Глубина очереди",
+      "tooltip": {
+        "shared": true,
+        "sort": 2,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "aliasColors": {},
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": "mq",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {},
+          "links": []
+        },
+        "overrides": []
+      },
+      "fill": 1,
+      "fillGradient": 0,
+      "gridPos": {
+        "h": 12,
+        "w": 24,
+        "x": 0,
+        "y": 12
+      },
+      "hiddenSeries": false,
+      "id": 83,
+      "legend": {
+        "alignAsTable": true,
+        "avg": false,
+        "current": true,
+        "max": true,
+        "min": false,
+        "show": true,
+        "sort": "current",
+        "sortDesc": true,
+        "total": false,
+        "values": true
+      },
+      "lines": true,
+      "linewidth": 1,
+      "nullPointMode": "null",
+      "options": {
+        "alertThreshold": true
+      },
+      "percentage": false,
+      "pluginVersion": "7.3.4",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "expr": "rate(mq_mqinq_mqinq_count_totalcalls[30s])",
+          "hide": false,
+          "interval": "",
+          "legendFormat": "{{QMGR_NAME}}",
+          "refId": "B"
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "Количество подключений к очередям",
+      "tooltip": {
+        "shared": true,
+        "sort": 2,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "aliasColors": {},
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": "mq",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {},
+          "links": []
+        },
+        "overrides": []
+      },
+      "fill": 1,
+      "fillGradient": 0,
+      "gridPos": {
+        "h": 12,
+        "w": 24,
+        "x": 0,
+        "y": 24
+      },
+      "hiddenSeries": false,
+      "id": 82,
+      "legend": {
+        "alignAsTable": true,
+        "avg": false,
+        "current": true,
+        "max": true,
+        "min": false,
+        "rightSide": true,
+        "show": true,
+        "sort": "current",
+        "sortDesc": true,
+        "total": false,
+        "values": true
+      },
+      "lines": true,
+      "linewidth": 1,
+      "nullPointMode": "null",
+      "options": {
+        "alertThreshold": true
+      },
+      "percentage": false,
+      "pluginVersion": "7.3.4",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "expr": "rate(mqobject_mqinq_mqinq_count_totalcalls[30s])",
+          "hide": false,
+          "interval": "",
+          "legendFormat": "{{QMGR_NAME}} {{MQ_OBJECT_NAME}}",
+          "refId": "B"
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "Количество подключений к очередям",
+      "tooltip": {
+        "shared": true,
+        "sort": 2,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "aliasColors": {},
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": "mq",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {},
+          "links": []
+        },
+        "overrides": []
+      },
+      "fill": 1,
+      "fillGradient": 0,
+      "gridPos": {
+        "h": 11,
+        "w": 24,
+        "x": 0,
+        "y": 36
+      },
+      "hiddenSeries": false,
+      "id": 81,
+      "legend": {
+        "alignAsTable": true,
+        "avg": false,
+        "current": true,
+        "max": true,
+        "min": false,
+        "show": true,
+        "sort": "current",
+        "sortDesc": true,
+        "total": false,
+        "values": true
+      },
+      "lines": true,
+      "linewidth": 1,
+      "nullPointMode": "null",
+      "options": {
+        "alertThreshold": true
+      },
+      "percentage": false,
+      "pluginVersion": "7.3.4",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "expr": "mq_mqconn_concurrent_connections_high_water_mark_connections{QMGR_NAME=~\".*GW.*\"}",
+          "hide": false,
+          "interval": "",
+          "legendFormat": "{{QMGR_NAME}}",
+          "refId": "B"
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "Количество подключений к Шлюзовому менеджеру",
+      "tooltip": {
+        "shared": true,
+        "sort": 2,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "aliasColors": {},
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": "mq",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {},
+          "links": []
+        },
+        "overrides": []
+      },
+      "fill": 1,
+      "fillGradient": 0,
+      "gridPos": {
+        "h": 11,
+        "w": 24,
+        "x": 0,
+        "y": 47
+      },
+      "hiddenSeries": false,
+      "id": 84,
+      "legend": {
+        "alignAsTable": true,
+        "avg": false,
+        "current": true,
+        "max": true,
+        "min": false,
+        "rightSide": true,
+        "show": true,
+        "sort": "current",
+        "sortDesc": true,
+        "total": false,
+        "values": true
+      },
+      "lines": true,
+      "linewidth": 1,
+      "nullPointMode": "null",
+      "options": {
+        "alertThreshold": true
+      },
+      "percentage": false,
+      "pluginVersion": "7.3.4",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "expr": "mqobject_channel_channel_total_connection_count{QMGR_NAME=~\"$QM\"}",
+          "hide": false,
+          "interval": "",
+          "legendFormat": "{{QMGR_NAME}} {{MQ_OBJECT_NAME}}",
+          "refId": "B"
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "Количество подключений к Шлюзовому менеджеру",
+      "tooltip": {
+        "shared": true,
+        "sort": 2,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "aliasColors": {},
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": "mq",
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {},
+          "links": []
+        },
+        "overrides": []
+      },
+      "fill": 1,
+      "fillGradient": 0,
+      "gridPos": {
+        "h": 11,
+        "w": 24,
+        "x": 0,
+        "y": 58
+      },
+      "hiddenSeries": false,
+      "id": 80,
+      "legend": {
+        "alignAsTable": true,
+        "avg": false,
+        "current": true,
+        "max": true,
+        "min": false,
+        "rightSide": true,
+        "show": true,
+        "sort": "max",
+        "sortDesc": true,
+        "total": false,
+        "values": true
+      },
+      "lines": true,
+      "linewidth": 1,
+      "nullPointMode": "null",
+      "options": {
+        "alertThreshold": true
+      },
+      "percentage": false,
+      "pluginVersion": "7.3.4",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "expr": "rate(mqobject_get_mqget_count_totalcalls{MQ_OBJECT_NAME=~'MSG.*', QMGR_NAME=~'MSG.GW.CLS[12]'}[5m])",
+          "hide": false,
+          "interval": "",
+          "legendFormat": "{{QMGR_NAME}} {{MQ_OBJECT_NAME}}",
+          "refId": "B"
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "Нагрузка",
+      "tooltip": {
+        "shared": true,
+        "sort": 2,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "collapsed": true,
+      "datasource": null,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 69
+      },
+      "id": 54,
+      "panels": [
+        {
+          "aliasColors": {},
+          "bars": false,
+          "dashLength": 10,
+          "dashes": false,
+          "datasource": "mq",
+          "decimals": 0,
+          "fieldConfig": {
+            "defaults": {
+              "custom": {},
+              "links": [],
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              }
+            },
+            "overrides": []
+          },
+          "fill": 1,
+          "fillGradient": 0,
+          "gridPos": {
+            "h": 9,
+            "w": 9,
+            "x": 0,
+            "y": 1
+          },
+          "hiddenSeries": false,
+          "id": 74,
+          "legend": {
+            "alignAsTable": true,
+            "avg": true,
+            "current": true,
+            "max": true,
+            "min": true,
+            "rightSide": false,
+            "show": true,
+            "total": true,
+            "values": true
+          },
+          "lines": true,
+          "linewidth": 1,
+          "nullPointMode": "connected",
+          "options": {
+            "alertThreshold": true
+          },
+          "percentage": false,
+          "pluginVersion": "7.3.4",
+          "pointradius": 2,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [
+            {
+              "alias": "Всего",
+              "color": "#37872D",
+              "fill": 0,
+              "stack": false
+            },
+            {
+              "alias": "persist",
+              "color": "#FA6400"
+            },
+            {
+              "alias": "non_persist",
+              "color": "#5794F2"
+            }
+          ],
+          "spaceLength": 10,
+          "stack": true,
+          "steppedLine": false,
+          "targets": [
+            {
+              "expr": "sum(irate(mqobject_put_mqput_persistent_message_count_totalmessages{QMGR_NAME=~\"$QM\", MQ_OBJECT_NAME=~\".*IN$\"}[30s])*15)+sum(irate(mqobject_put_mqput1_persistent_message_count_totalmessages{QMGR_NAME=~\"$QM\", MQ_OBJECT_NAME=~\".*IN$\"}[30s])*15)",
+              "interval": "",
+              "legendFormat": "persist",
+              "refId": "B"
+            },
+            {
+              "expr": "sum(irate(mqobject_put_mqput_non_persistent_message_count_totalmessages{QMGR_NAME=~\"$QM\", MQ_OBJECT_NAME=~\".*IN$\"}[30s])*15)+sum(irate(mqobject_put_mqput1_non_persistent_message_count_totalmessages{QMGR_NAME=~\"$QM\", MQ_OBJECT_NAME=~\".*IN$\"}[30s])*15)",
+              "interval": "",
+              "legendFormat": "non_persist",
+              "refId": "A"
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeRegions": [],
+          "timeShift": null,
+          "title": "Нагрузка на шину, tp15s",
+          "tooltip": {
+            "shared": true,
+            "sort": 2,
+            "value_type": "individual"
+          },
+          "transformations": [
+            {
+              "id": "organize",
+              "options": {}
+            },
+            {
+              "id": "calculateField",
+              "options": {
+                "alias": "Всего",
+                "mode": "reduceRow",
+                "reduce": {
+                  "include": [
+                    "persist",
+                    "non_persist"
+                  ],
+                  "reducer": "sum"
+                },
+                "replaceFields": false
+              }
+            }
+          ],
+          "type": "graph",
+          "xaxis": {
+            "buckets": null,
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ],
+          "yaxis": {
+            "align": false,
+            "alignLevel": null
+          }
+        },
+        {
+          "datasource": "mq",
+          "description": "",
+          "fieldConfig": {
+            "defaults": {
+              "custom": {},
+              "links": [],
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "orange",
+                    "value": 0
+                  },
+                  {
+                    "color": "green",
+                    "value": 1
+                  },
+                  {
+                    "color": "#EAB839",
+                    "value": 15000
+                  },
+                  {
+                    "color": "red",
+                    "value": 20000
+                  }
+                ]
+              }
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 9,
+            "w": 6,
+            "x": 9,
+            "y": 1
+          },
+          "id": 62,
+          "options": {
+            "reduceOptions": {
+              "calcs": [
+                "lastNotNull"
+              ],
+              "fields": "",
+              "limit": 1,
+              "values": false
+            },
+            "showThresholdLabels": false,
+            "showThresholdMarkers": true
+          },
+          "pluginVersion": "7.3.4",
+          "targets": [
+            {
+              "expr": "sum(irate(mqobject_put_mqput_mqput1_count_totalcalls{QMGR_NAME=~\"$QM\", MQ_OBJECT_NAME=~\".*IN$\"}[30s])*15)",
+              "format": "time_series",
+              "instant": false,
+              "interval": "",
+              "legendFormat": "{{QMGR_NAME}} {{MQ_OBJECT_NAME}}",
+              "refId": "A"
+            }
+          ],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "Нагрузка на шину, tp15s",
+          "type": "gauge"
+        },
+        {
+          "datasource": null,
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "thresholds"
+              },
+              "custom": {},
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "#EAB839",
+                    "value": 10
+                  },
+                  {
+                    "color": "red",
+                    "value": 40
+                  }
+                ]
+              }
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 4,
+            "w": 3,
+            "x": 15,
+            "y": 1
+          },
+          "id": 63,
+          "options": {
+            "colorMode": "background",
+            "graphMode": "area",
+            "justifyMode": "auto",
+            "orientation": "auto",
+            "reduceOptions": {
+              "calcs": [
+                "last"
+              ],
+              "fields": "",
+              "values": false
+            },
+            "textMode": "auto"
+          },
+          "pluginVersion": "7.3.4",
+          "targets": [
+            {
+              "expr": "sum(irate(mqobject_get_messages_expired_totalmessages{QMGR_NAME=~\"$QM\", MQ_OBJECT_NAME!~\"SYSTEM.RETAINED.PUB.QUEUE\"}[1m]))*15",
+              "instant": false,
+              "interval": "",
+              "legendFormat": "{{QMGR_NAME}} :: {{MQ_OBJECT_NAME}}",
+              "refId": "A"
+            }
+          ],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "Просроченные сообщения",
+          "type": "stat"
+        },
+        {
+          "datasource": null,
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "thresholds"
+              },
+              "custom": {
+                "align": null,
+                "filterable": false
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "yellow",
+                    "value": 10
+                  },
+                  {
+                    "color": "orange",
+                    "value": 100
+                  },
+                  {
+                    "color": "red",
+                    "value": 200
+                  }
+                ]
+              }
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 4,
+            "w": 3,
+            "x": 18,
+            "y": 1
+          },
+          "id": 64,
+          "options": {
+            "colorMode": "background",
+            "graphMode": "area",
+            "justifyMode": "auto",
+            "orientation": "auto",
+            "reduceOptions": {
+              "calcs": [
+                "last"
+              ],
+              "fields": "",
+              "values": false
+            },
+            "textMode": "auto"
+          },
+          "pluginVersion": "7.3.4",
+          "targets": [
+            {
+              "expr": "sum(mqobject_queue_queue_depth_messages{QMGR_NAME=~\"$QM\", MQ_OBJECT_NAME=\"SYSTEM.DEAD.LETTER.QUEUE\"})",
+              "format": "time_series",
+              "instant": false,
+              "interval": "",
+              "legendFormat": "DLQ",
+              "refId": "A"
+            }
+          ],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "Накопления DLQ",
+          "type": "stat"
+        },
+        {
+          "datasource": null,
+          "fieldConfig": {
+            "defaults": {
+              "custom": {},
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "#EAB839",
+                    "value": 150
+                  },
+                  {
+                    "color": "red",
+                    "value": 500
+                  }
+                ]
+              }
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 4,
+            "w": 3,
+            "x": 21,
+            "y": 1
+          },
+          "id": 65,
+          "options": {
+            "colorMode": "background",
+            "graphMode": "area",
+            "justifyMode": "auto",
+            "orientation": "auto",
+            "reduceOptions": {
+              "calcs": [
+                "last"
+              ],
+              "fields": "",
+              "values": false
+            },
+            "textMode": "auto"
+          },
+          "pluginVersion": "7.3.4",
+          "targets": [
+            {
+              "expr": "sum(mqobject_queue_average_queue_time_microseconds{QMGR_NAME=~\"$QM\", MQ_OBJECT_NAME!~\"^SYSTEM.*\" , MQ_OBJECT_NAME!~\".*LOG.RQ$\"})/1000000",
+              "interval": "",
+              "legendFormat": "avg_queue_time_sec",
+              "refId": "A"
+            }
+          ],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "время ожидания в очереди, s",
+          "type": "stat"
+        },
+        {
+          "datasource": "mq",
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "thresholds"
+              },
+              "custom": {
+                "align": null,
+                "displayMode": "auto",
+                "filterable": false
+              },
+              "links": [],
+              "mappings": [],
+              "noValue": "0",
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 1
+                  }
+                ]
+              }
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 5,
+            "w": 3,
+            "x": 15,
+            "y": 5
+          },
+          "id": 69,
+          "options": {
+            "colorMode": "background",
+            "graphMode": "area",
+            "justifyMode": "auto",
+            "orientation": "auto",
+            "reduceOptions": {
+              "calcs": [
+                "last"
+              ],
+              "fields": "",
+              "values": false
+            },
+            "textMode": "value"
+          },
+          "pluginVersion": "7.3.4",
+          "targets": [
+            {
+              "expr": "count(mqobject_channel_channel_status_untyped{QMGR_NAME=~\"$QM\"} >0 and mqobject_channel_channel_status_untyped{QMGR_NAME=~\"$QM\"} <100)",
+              "format": "time_series",
+              "instant": false,
+              "interval": "",
+              "legendFormat": "",
+              "refId": "A"
+            }
+          ],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "Каналы не Running и Inactive",
+          "transformations": [],
+          "type": "stat"
+        },
+        {
+          "datasource": "mq",
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "thresholds"
+              },
+              "custom": {
+                "align": null,
+                "displayMode": "auto",
+                "filterable": false
+              },
+              "links": [],
+              "mappings": [],
+              "min": 0,
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "red",
+                    "value": null
+                  },
+                  {
+                    "color": "green",
+                    "value": 62
+                  }
+                ]
+              }
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 5,
+            "w": 3,
+            "x": 18,
+            "y": 5
+          },
+          "id": 71,
+          "options": {
+            "colorMode": "background",
+            "graphMode": "area",
+            "justifyMode": "auto",
+            "orientation": "auto",
+            "reduceOptions": {
+              "calcs": [
+                "last"
+              ],
+              "fields": "",
+              "values": false
+            },
+            "textMode": "auto"
+          },
+          "pluginVersion": "7.3.4",
+          "targets": [
+            {
+              "expr": "count(count by (QMGR_NAME) (mqobject_queue_queue_depth_messages{QMGR_NAME=~\"$QM\"}))",
+              "format": "time_series",
+              "instant": false,
+              "interval": "",
+              "legendFormat": "",
+              "refId": "A"
+            }
+          ],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "QM в мониторинге",
+          "transformations": [],
+          "type": "stat"
+        },
+        {
+          "datasource": null,
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "thresholds"
+              },
+              "custom": {
+                "align": null,
+                "filterable": false
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "yellow",
+                    "value": 10
+                  },
+                  {
+                    "color": "orange",
+                    "value": 50
+                  },
+                  {
+                    "color": "red",
+                    "value": 100
+                  }
+                ]
+              }
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 4,
+            "w": 3,
+            "x": 21,
+            "y": 5
+          },
+          "id": 78,
+          "options": {
+            "colorMode": "background",
+            "graphMode": "area",
+            "justifyMode": "auto",
+            "orientation": "auto",
+            "reduceOptions": {
+              "calcs": [
+                "last"
+              ],
+              "fields": "",
+              "values": false
+            },
+            "textMode": "auto"
+          },
+          "pluginVersion": "7.3.4",
+          "targets": [
+            {
+              "expr": "sum(mqobject_queue_queue_depth_messages{QMGR_NAME=~\"$QM\", MQ_OBJECT_NAME=\"SYSTEM.CLUSTER.TRANSMIT.QUEUE\"})",
+              "format": "time_series",
+              "instant": false,
+              "interval": "",
+              "legendFormat": "DLQ",
+              "refId": "A"
+            }
+          ],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "Накопления SCTQ",
+          "type": "stat"
+        },
+        {
+          "aliasColors": {},
+          "bars": false,
+          "dashLength": 10,
+          "dashes": false,
+          "datasource": null,
+          "decimals": 0,
+          "fieldConfig": {
+            "defaults": {
+              "custom": {}
+            },
+            "overrides": []
+          },
+          "fill": 1,
+          "fillGradient": 0,
+          "gridPos": {
+            "h": 8,
+            "w": 12,
+            "x": 0,
+            "y": 10
+          },
+          "hiddenSeries": false,
+          "id": 61,
+          "legend": {
+            "alignAsTable": true,
+            "avg": false,
+            "current": true,
+            "max": true,
+            "min": false,
+            "show": true,
+            "sort": "max",
+            "sortDesc": true,
+            "total": true,
+            "values": true
+          },
+          "lines": true,
+          "linewidth": 1,
+          "nullPointMode": "null as zero",
+          "options": {
+            "alertThreshold": true
+          },
+          "percentage": false,
+          "pluginVersion": "7.3.4",
+          "pointradius": 2,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "spaceLength": 10,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "expr": "irate(mqobject_get_messages_expired_totalmessages{QMGR_NAME=~\"$QM\", MQ_OBJECT_NAME!~\"SYSTEM.RETAINED.PUB.QUEUE\"}[1m])*15>0",
+              "interval": "",
+              "legendFormat": "{{QMGR_NAME}} :: {{MQ_OBJECT_NAME}}",
+              "refId": "A"
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeRegions": [],
+          "timeShift": null,
+          "title": "Просроченные сообщения, tp15s",
+          "tooltip": {
+            "shared": true,
+            "sort": 0,
+            "value_type": "individual"
+          },
+          "type": "graph",
+          "xaxis": {
+            "buckets": null,
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ],
+          "yaxis": {
+            "align": false,
+            "alignLevel": null
+          }
+        },
+        {
+          "aliasColors": {},
+          "bars": false,
+          "dashLength": 10,
+          "dashes": false,
+          "datasource": null,
+          "fieldConfig": {
+            "defaults": {
+              "custom": {},
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 5000000
+                  }
+                ]
+              }
+            },
+            "overrides": []
+          },
+          "fill": 1,
+          "fillGradient": 0,
+          "gridPos": {
+            "h": 8,
+            "w": 12,
+            "x": 12,
+            "y": 10
+          },
+          "hiddenSeries": false,
+          "id": 66,
+          "legend": {
+            "alignAsTable": true,
+            "avg": true,
+            "current": true,
+            "max": true,
+            "min": true,
+            "show": true,
+            "sort": "max",
+            "sortDesc": true,
+            "total": true,
+            "values": true
+          },
+          "lines": true,
+          "linewidth": 1,
+          "nullPointMode": "null as zero",
+          "options": {
+            "alertThreshold": true
+          },
+          "percentage": false,
+          "pluginVersion": "7.3.4",
+          "pointradius": 2,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "spaceLength": 10,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "expr": "mqobject_queue_average_queue_time_microseconds{QMGR_NAME=~\"$QM\", MQ_OBJECT_NAME!~\"^SYSTEM.*\" , MQ_OBJECT_NAME!~\".*LOG.RQ$\"}/1000000>1",
+              "interval": "",
+              "legendFormat": "{{QMGR_NAME}} :: {{MQ_OBJECT_NAME}}",
+              "refId": "A"
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeRegions": [],
+          "timeShift": null,
+          "title": "время ожидания в очереди, сек.",
+          "tooltip": {
+            "shared": true,
+            "sort": 2,
+            "value_type": "individual"
+          },
+          "type": "graph",
+          "xaxis": {
+            "buckets": null,
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ],
+          "yaxis": {
+            "align": false,
+            "alignLevel": null
+          }
+        }
+      ],
+      "title": "Общие",
+      "type": "row"
+    },
+    {
+      "collapsed": true,
+      "datasource": null,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 70
+      },
+      "id": 77,
+      "panels": [
+        {
+          "aliasColors": {},
+          "bars": false,
+          "dashLength": 10,
+          "dashes": false,
+          "datasource": "mq",
+          "decimals": 0,
+          "fieldConfig": {
+            "defaults": {
+              "custom": {},
+              "links": [],
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              }
+            },
+            "overrides": []
+          },
+          "fill": 1,
+          "fillGradient": 0,
+          "gridPos": {
+            "h": 10,
+            "w": 24,
+            "x": 0,
+            "y": 13
+          },
+          "hiddenSeries": false,
+          "id": 75,
+          "legend": {
+            "alignAsTable": true,
+            "avg": true,
+            "current": true,
+            "max": true,
+            "min": true,
+            "rightSide": false,
+            "show": true,
+            "total": true,
+            "values": true
+          },
+          "lines": true,
+          "linewidth": 1,
+          "nullPointMode": "null as zero",
+          "options": {
+            "alertThreshold": true
+          },
+          "percentage": false,
+          "pluginVersion": "7.3.4",
+          "pointradius": 2,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [
+            {
+              "alias": "Всего",
+              "color": "#37872D",
+              "fill": 0,
+              "stack": false
+            },
+            {
+              "alias": "persist",
+              "color": "#FA6400"
+            },
+            {
+              "alias": "non_persist",
+              "color": "#5794F2"
+            }
+          ],
+          "spaceLength": 10,
+          "stack": true,
+          "steppedLine": false,
+          "targets": [
+            {
+              "expr": "irate(mqobject_put_mqput_persistent_message_count_totalmessages{QMGR_NAME=~\"$QM\", MQ_OBJECT_NAME=~\".*IN$\"}[30s])*15>0+irate(mqobject_put_mqput1_persistent_message_count_totalmessages{QMGR_NAME=~\"$QM\", MQ_OBJECT_NAME=~\".*IN$\"}[30s])*15>0",
+              "interval": "",
+              "legendFormat": "persist {{QMGR_NAME}}::{{MQ_OBJECT_NAME}}",
+              "refId": "B"
+            },
+            {
+              "expr": "irate(mqobject_put_mqput_non_persistent_message_count_totalmessages{QMGR_NAME=~\"$QM\", MQ_OBJECT_NAME=~\".*IN$\"}[30s])*15>0+irate(mqobject_put_mqput1_non_persistent_message_count_totalmessages{QMGR_NAME=~\"$QM\", MQ_OBJECT_NAME=~\".*IN$\"}[30s])*15>0",
+              "interval": "",
+              "legendFormat": "non_persist {{QMGR_NAME}}::{{MQ_OBJECT_NAME}}",
+              "refId": "A"
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeRegions": [],
+          "timeShift": null,
+          "title": "Нагрузка на шину, tp15s",
+          "tooltip": {
+            "shared": true,
+            "sort": 2,
+            "value_type": "individual"
+          },
+          "transformations": [
+            {
+              "id": "organize",
+              "options": {}
+            },
+            {
+              "id": "calculateField",
+              "options": {
+                "alias": "Всего",
+                "mode": "reduceRow",
+                "reduce": {
+                  "include": [
+                    "persist",
+                    "non_persist"
+                  ],
+                  "reducer": "sum"
+                },
+                "replaceFields": false
+              }
+            }
+          ],
+          "type": "graph",
+          "xaxis": {
+            "buckets": null,
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ],
+          "yaxis": {
+            "align": false,
+            "alignLevel": null
+          }
+        }
+      ],
+      "title": "Детализация нагрзуки",
+      "type": "row"
+    },
+    {
+      "collapsed": true,
+      "datasource": null,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 71
+      },
+      "id": 58,
+      "panels": [
+        {
+          "datasource": "mq",
+          "description": "",
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "fixed"
+              },
+              "custom": {
+                "align": null,
+                "displayMode": "auto",
+                "filterable": false
+              },
+              "links": [],
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "dark-green",
+                    "value": null
+                  }
+                ]
+              }
+            },
+            "overrides": [
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Глубина"
+                },
+                "properties": [
+                  {
+                    "id": "custom.displayMode",
+                    "value": "color-background"
+                  },
+                  {
+                    "id": "color"
+                  },
+                  {
+                    "id": "thresholds",
+                    "value": {
+                      "mode": "absolute",
+                      "steps": [
+                        {
+                          "color": "green",
+                          "value": null
+                        },
+                        {
+                          "color": "#EAB839",
+                          "value": 10
+                        },
+                        {
+                          "color": "orange",
+                          "value": 100
+                        },
+                        {
+                          "color": "red",
+                          "value": 500
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 16,
+            "x": 0,
+            "y": 14
+          },
+          "id": 44,
+          "options": {
+            "showHeader": true,
+            "sortBy": [
+              {
+                "desc": true,
+                "displayName": "Глубина"
+              }
+            ]
+          },
+          "pluginVersion": "7.3.4",
+          "targets": [
+            {
+              "expr": "mqobject_queue_queue_depth_messages{QMGR_NAME=~\"$QM\", MQ_OBJECT_NAME!~\"^SYSTEM.*\"}>0",
+              "format": "table",
+              "instant": true,
+              "interval": "",
+              "legendFormat": "",
+              "refId": "A"
+            }
+          ],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "Не нулевые очереди",
+          "transformations": [
+            {
+              "id": "organize",
+              "options": {
+                "excludeByName": {
+                  "__name__": true,
+                  "component_name": true,
+                  "instance": true,
+                  "job": true,
+                  "kubernetes_namespace": true,
+                  "metrics_path": true,
+                  "project_code": true,
+                  "ris_code": true,
+                  "scheme": true,
+                  "tsam_server_version": true
+                },
+                "indexByName": {
+                  "MQ_OBJECT_NAME": 2,
+                  "QMGR_NAME": 3,
+                  "Time": 0,
+                  "Value": 1,
+                  "__name__": 4,
+                  "host": 5,
+                  "instance": 6,
+                  "job": 7,
+                  "metrics_path": 8,
+                  "scheme": 9,
+                  "tsam_server_version": 10
+                },
+                "renameByName": {
+                  "MQ_OBJECT_NAME": "Очередь",
+                  "QMGR_NAME": "Менеджер",
+                  "Time": "Обновлено",
+                  "Value": "Глубина",
+                  "__name__": "",
+                  "host": "Сервер"
+                }
+              }
+            }
+          ],
+          "type": "table"
+        },
+        {
+          "aliasColors": {},
+          "bars": false,
+          "dashLength": 10,
+          "dashes": false,
+          "datasource": "mq",
+          "decimals": 0,
+          "fieldConfig": {
+            "defaults": {
+              "custom": {},
+              "links": []
+            },
+            "overrides": []
+          },
+          "fill": 1,
+          "fillGradient": 0,
+          "gridPos": {
+            "h": 8,
+            "w": 8,
+            "x": 16,
+            "y": 14
+          },
+          "hiddenSeries": false,
+          "id": 52,
+          "legend": {
+            "alignAsTable": true,
+            "avg": false,
+            "current": true,
+            "max": true,
+            "min": false,
+            "show": true,
+            "sort": "max",
+            "sortDesc": true,
+            "total": false,
+            "values": true
+          },
+          "lines": true,
+          "linewidth": 1,
+          "nullPointMode": "null as zero",
+          "options": {
+            "alertThreshold": true
+          },
+          "percentage": false,
+          "pluginVersion": "7.3.4",
+          "pointradius": 2,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "spaceLength": 10,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "expr": "mqobject_queue_queue_depth_messages{QMGR_NAME=~\"$QM\", MQ_OBJECT_NAME!~\"^SYSTEM.*\"}>0",
+              "interval": "",
+              "legendFormat": "{{QMGR_NAME}} :: {{MQ_OBJECT_NAME}}",
+              "refId": "A"
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeRegions": [],
+          "timeShift": null,
+          "title": "Динамика накоплений",
+          "tooltip": {
+            "shared": true,
+            "sort": 2,
+            "value_type": "individual"
+          },
+          "type": "graph",
+          "xaxis": {
+            "buckets": null,
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ],
+          "yaxis": {
+            "align": false,
+            "alignLevel": null
+          }
+        },
+        {
+          "datasource": "mq",
+          "description": "Только SYSTEM.DEAD.LETTER.QUEUE и SYSTEM.CLUSTER.TRANSMIT.QUEUE",
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "fixed"
+              },
+              "custom": {
+                "align": null,
+                "displayMode": "auto",
+                "filterable": false
+              },
+              "links": [],
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "dark-green",
+                    "value": null
+                  }
+                ]
+              }
+            },
+            "overrides": [
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Глубина"
+                },
+                "properties": [
+                  {
+                    "id": "custom.displayMode",
+                    "value": "color-background"
+                  },
+                  {
+                    "id": "color"
+                  },
+                  {
+                    "id": "thresholds",
+                    "value": {
+                      "mode": "absolute",
+                      "steps": [
+                        {
+                          "color": "green",
+                          "value": null
+                        },
+                        {
+                          "color": "#EAB839",
+                          "value": 10
+                        },
+                        {
+                          "color": "orange",
+                          "value": 100
+                        },
+                        {
+                          "color": "red",
+                          "value": 500
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 16,
+            "x": 0,
+            "y": 22
+          },
+          "id": 56,
+          "options": {
+            "showHeader": true,
+            "sortBy": [
+              {
+                "desc": true,
+                "displayName": "Глубина"
+              }
+            ]
+          },
+          "pluginVersion": "7.3.4",
+          "targets": [
+            {
+              "expr": "mqobject_queue_queue_depth_messages{QMGR_NAME=~\"$QM\", MQ_OBJECT_NAME=~\"$sysqueue\"}",
+              "format": "table",
+              "instant": true,
+              "interval": "",
+              "legendFormat": "",
+              "refId": "A"
+            }
+          ],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "Системные очереди",
+          "transformations": [
+            {
+              "id": "organize",
+              "options": {
+                "excludeByName": {
+                  "__name__": true,
+                  "component_name": true,
+                  "instance": true,
+                  "job": true,
+                  "kubernetes_namespace": true,
+                  "metrics_path": true,
+                  "project_code": true,
+                  "ris_code": true,
+                  "scheme": true,
+                  "tsam_server_version": true
+                },
+                "indexByName": {
+                  "MQ_OBJECT_NAME": 2,
+                  "QMGR_NAME": 3,
+                  "Time": 0,
+                  "Value": 1,
+                  "__name__": 4,
+                  "host": 5,
+                  "instance": 6,
+                  "job": 7,
+                  "metrics_path": 8,
+                  "scheme": 9,
+                  "tsam_server_version": 10
+                },
+                "renameByName": {
+                  "MQ_OBJECT_NAME": "Очередь",
+                  "QMGR_NAME": "Менеджер",
+                  "Time": "Обновлено",
+                  "Value": "Глубина",
+                  "__name__": "",
+                  "host": "Сервер"
+                }
+              }
+            }
+          ],
+          "type": "table"
+        },
+        {
+          "aliasColors": {},
+          "bars": false,
+          "dashLength": 10,
+          "dashes": false,
+          "datasource": "mq",
+          "decimals": 0,
+          "fieldConfig": {
+            "defaults": {
+              "custom": {},
+              "links": []
+            },
+            "overrides": []
+          },
+          "fill": 1,
+          "fillGradient": 0,
+          "gridPos": {
+            "h": 8,
+            "w": 8,
+            "x": 16,
+            "y": 22
+          },
+          "hiddenSeries": false,
+          "id": 45,
+          "legend": {
+            "alignAsTable": true,
+            "avg": false,
+            "current": true,
+            "max": true,
+            "min": false,
+            "show": true,
+            "sort": "current",
+            "sortDesc": true,
+            "total": false,
+            "values": true
+          },
+          "lines": true,
+          "linewidth": 1,
+          "nullPointMode": "null as zero",
+          "options": {
+            "alertThreshold": true
+          },
+          "percentage": false,
+          "pluginVersion": "7.3.4",
+          "pointradius": 2,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "spaceLength": 10,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "expr": "mqobject_queue_queue_depth_messages{QMGR_NAME=~\"$QM\", MQ_OBJECT_NAME=~\"$sysqueue\"}",
+              "interval": "",
+              "legendFormat": "{{QMGR_NAME}} :: {{MQ_OBJECT_NAME}}",
+              "refId": "A"
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeRegions": [],
+          "timeShift": null,
+          "title": "Динамика накоплений SYSTEM",
+          "tooltip": {
+            "shared": true,
+            "sort": 2,
+            "value_type": "individual"
+          },
+          "type": "graph",
+          "xaxis": {
+            "buckets": null,
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ],
+          "yaxis": {
+            "align": false,
+            "alignLevel": null
+          }
+        }
+      ],
+      "title": "Текущие накопления",
+      "type": "row"
+    },
+    {
+      "collapsed": false,
+      "datasource": null,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 72
+      },
+      "id": 49,
+      "panels": [],
+      "title": "Статистика накоплений в очереди",
+      "type": "row"
+    },
+    {
+      "datasource": "mq",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {
+            "align": null,
+            "filterable": false
+          },
+          "links": [],
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Глубина"
+            },
+            "properties": [
+              {
+                "id": "custom.displayMode",
+                "value": "color-background"
+              },
+              {
+                "id": "thresholds",
+                "value": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "semi-dark-green",
+                      "value": null
+                    },
+                    {
+                      "color": "dark-yellow",
+                      "value": 10
+                    },
+                    {
+                      "color": "dark-orange",
+                      "value": 80
+                    },
+                    {
+                      "color": "red",
+                      "value": 500
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 24,
+        "x": 0,
+        "y": 73
+      },
+      "id": 73,
+      "options": {
+        "frameIndex": 0,
+        "showHeader": true
+      },
+      "pluginVersion": "7.3.4",
+      "targets": [
+        {
+          "expr": "irate(mqobject_put_mqput_mqput1_count_totalcalls{QMGR_NAME=~\"$QM\", MQ_OBJECT_NAME=~\"$Queue\"}[1m])*15",
+          "format": "table",
+          "interval": "",
+          "legendFormat": "Put",
+          "refId": "A"
+        },
+        {
+          "expr": "irate(mqobject_get_mqget_count_totalcalls{QMGR_NAME=~\"$QM\", MQ_OBJECT_NAME=~\"$Queue\"}[1m])*15",
+          "format": "table",
+          "interval": "",
+          "legendFormat": "Get",
+          "refId": "B"
+        },
+        {
+          "expr": "mqobject_queue_queue_depth_messages{QMGR_NAME=~\"$QM\", MQ_OBJECT_NAME=~\"$Queue\"}",
+          "format": "table",
+          "interval": "",
+          "legendFormat": "Depth",
+          "refId": "C"
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Очередь, чтение, запись",
+      "transformations": [
+        {
+          "id": "seriesToColumns",
+          "options": {
+            "byField": "MQ_OBJECT_NAME"
+          }
+        },
+        {
+          "id": "organize",
+          "options": {
+            "excludeByName": {
+              "QMGR_NAME 2": true,
+              "QMGR_NAME 3": true,
+              "Time 2": true,
+              "Time 3": true,
+              "Value #A": false,
+              "__name__": true,
+              "component_name 1": true,
+              "component_name 2": true,
+              "component_name 3": true,
+              "host 2": true,
+              "host 3": true,
+              "instance 1": true,
+              "instance 2": true,
+              "instance 3": true,
+              "job 1": true,
+              "job 2": true,
+              "job 3": true,
+              "kubernetes_namespace 1": true,
+              "kubernetes_namespace 2": true,
+              "kubernetes_namespace 3": true,
+              "metrics_path 1": true,
+              "metrics_path 2": true,
+              "metrics_path 3": true,
+              "project_code 1": true,
+              "project_code 2": true,
+              "project_code 3": true,
+              "ris_code 1": true,
+              "ris_code 2": true,
+              "ris_code 3": true,
+              "scheme 1": true,
+              "scheme 2": true,
+              "scheme 3": true,
+              "tsam_server_version 1": true,
+              "tsam_server_version 2": true,
+              "tsam_server_version 3": true
+            },
+            "indexByName": {
+              "MQ_OBJECT_NAME": 4,
+              "QMGR_NAME 1": 5,
+              "QMGR_NAME 2": 13,
+              "QMGR_NAME 3": 21,
+              "Time 1": 0,
+              "Time 2": 12,
+              "Time 3": 20,
+              "Value #A": 2,
+              "Value #B": 3,
+              "Value #C": 1,
+              "__name__": 22,
+              "host 1": 6,
+              "host 2": 14,
+              "host 3": 23,
+              "instance 1": 7,
+              "instance 2": 15,
+              "instance 3": 24,
+              "job 1": 8,
+              "job 2": 16,
+              "job 3": 25,
+              "metrics_path 1": 9,
+              "metrics_path 2": 17,
+              "metrics_path 3": 26,
+              "scheme 1": 10,
+              "scheme 2": 18,
+              "scheme 3": 27,
+              "tsam_server_version 1": 11,
+              "tsam_server_version 2": 19,
+              "tsam_server_version 3": 28
+            },
+            "renameByName": {
+              "MQ_OBJECT_NAME": "Очередь",
+              "QMGR_NAME 1": "Менеджер",
+              "Time 1": "Время",
+              "Value #A": "Запись",
+              "Value #B": "Чтение",
+              "Value #C": "Глубина",
+              "host 1": "Сервер"
+            }
+          }
+        }
+      ],
+      "type": "table"
+    },
+    {
+      "aliasColors": {},
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": "mq",
+      "decimals": 0,
+      "fieldConfig": {
+        "defaults": {
+          "custom": {},
+          "links": []
+        },
+        "overrides": []
+      },
+      "fill": 1,
+      "fillGradient": 0,
+      "gridPos": {
+        "h": 12,
+        "w": 24,
+        "x": 0,
+        "y": 80
+      },
+      "hiddenSeries": false,
+      "id": 51,
+      "interval": "",
+      "legend": {
+        "alignAsTable": true,
+        "avg": false,
+        "current": true,
+        "max": true,
+        "min": true,
+        "rightSide": false,
+        "show": true,
+        "sort": "total",
+        "sortDesc": true,
+        "total": true,
+        "values": true
+      },
+      "lines": true,
+      "linewidth": 1,
+      "nullPointMode": "null",
+      "options": {
+        "alertThreshold": false
+      },
+      "percentage": false,
+      "pluginVersion": "7.3.4",
+      "pointradius": 5,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [
+        {
+          "alias": "/(Put)/",
+          "color": "#C4162A",
+          "lines": false
+        },
+        {
+          "alias": "/(Get)/",
+          "color": "#37872D",
+          "lines": false
+        },
+        {
+          "alias": "/(Depth)/",
+          "bars": false,
+          "lines": true,
+          "linewidth": 2
+        }
+      ],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "expr": "irate(mqobject_put_mqput_persistent_message_count_totalmessages{QMGR_NAME=~\"$QM\", MQ_OBJECT_NAME=~\"$Queue\"}[1m])*15+irate(mqobject_put_mqput1_persistent_message_count_totalmessages{QMGR_NAME=~\"$QM\", MQ_OBJECT_NAME=~\"$Queue\"}[1m])*15+irate(mqobject_put_mqput_non_persistent_message_count_totalmessages{QMGR_NAME=~\"$QM\", MQ_OBJECT_NAME=~\"$Queue\"}[1m])*15+irate(mqobject_put_mqput1_non_persistent_message_count_totalmessages{QMGR_NAME=~\"$QM\", MQ_OBJECT_NAME=~\"$Queue\"}[1m])*15",
+          "interval": "",
+          "legendFormat": "{{QMGR_NAME}} :: {{MQ_OBJECT_NAME}} Put",
+          "refId": "A"
+        },
+        {
+          "expr": "-irate(mqobject_get_mqget_count_totalcalls{QMGR_NAME=~\"$QM\", MQ_OBJECT_NAME=~\"$Queue\"}[1m])*15",
+          "interval": "",
+          "legendFormat": "{{QMGR_NAME}} :: {{MQ_OBJECT_NAME}} Get",
+          "refId": "B"
+        },
+        {
+          "expr": "mqobject_queue_queue_depth_messages{QMGR_NAME=~\"$QM\", MQ_OBJECT_NAME=~\"$Queue\"}",
+          "interval": "",
+          "legendFormat": "{{QMGR_NAME}} :: {{MQ_OBJECT_NAME}} Depth",
+          "refId": "C"
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "Динамика: Очередь, чтение, запись",
+      "tooltip": {
+        "shared": false,
+        "sort": 2,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "collapsed": false,
+      "datasource": null,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 92
+      },
+      "id": 6,
+      "panels": [],
+      "title": "Подключения, каналы",
+      "type": "row"
+    },
+    {
+      "aliasColors": {},
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": "mq",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {},
+          "links": []
+        },
+        "overrides": []
+      },
+      "fill": 1,
+      "fillGradient": 0,
+      "gridPos": {
+        "h": 8,
+        "w": 11,
+        "x": 0,
+        "y": 93
+      },
+      "hiddenSeries": false,
+      "id": 39,
+      "legend": {
+        "alignAsTable": true,
+        "avg": false,
+        "current": true,
+        "max": true,
+        "min": false,
+        "show": true,
+        "sort": "current",
+        "sortDesc": true,
+        "total": false,
+        "values": true
+      },
+      "lines": true,
+      "linewidth": 1,
+      "nullPointMode": "null",
+      "options": {
+        "alertThreshold": true
+      },
+      "percentage": false,
+      "pluginVersion": "7.3.4",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "expr": "mq_mqconn_concurrent_connections_high_water_mark_connections{QMGR_NAME=~\".*GW.*\"}",
+          "hide": false,
+          "interval": "",
+          "legendFormat": "{{QMGR_NAME}}",
+          "refId": "B"
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "Количество подключений к Шлюзовому менеджеру",
+      "tooltip": {
+        "shared": true,
+        "sort": 2,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "datasource": "mq",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "fixed"
+          },
+          "custom": {
+            "align": null,
+            "displayMode": "auto",
+            "filterable": false
+          },
+          "links": [],
+          "mappings": [
+            {
+              "from": "",
+              "id": 1,
+              "text": "Running",
+              "to": "",
+              "type": 1,
+              "value": "100"
+            },
+            {
+              "from": "",
+              "id": 2,
+              "text": "Requesting",
+              "to": "",
+              "type": 1,
+              "value": "90"
+            },
+            {
+              "from": "",
+              "id": 3,
+              "text": "Paused",
+              "to": "",
+              "type": 1,
+              "value": "80"
+            },
+            {
+              "from": "",
+              "id": 4,
+              "text": "Binding",
+              "to": "",
+              "type": 1,
+              "value": "70"
+            },
+            {
+              "from": "",
+              "id": 5,
+              "text": "Starting",
+              "to": "",
+              "type": 1,
+              "value": "60"
+            },
+            {
+              "from": "",
+              "id": 6,
+              "text": "Initializing",
+              "to": "",
+              "type": 1,
+              "value": "50"
+            },
+            {
+              "from": "",
+              "id": 7,
+              "text": "Switching",
+              "to": "",
+              "type": 1,
+              "value": "40"
+            },
+            {
+              "from": "",
+              "id": 8,
+              "text": "Stopping",
+              "to": "",
+              "type": 1,
+              "value": "30"
+            },
+            {
+              "from": "",
+              "id": 9,
+              "text": "Retrying",
+              "to": "",
+              "type": 1,
+              "value": "20"
+            },
+            {
+              "from": "",
+              "id": 10,
+              "text": "Stopped",
+              "to": "",
+              "type": 1,
+              "value": "10"
+            },
+            {
+              "from": "",
+              "id": 11,
+              "text": "Inactive",
+              "to": "",
+              "type": 1,
+              "value": "0"
+            }
+          ],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "dark-green",
+                "value": null
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Статус"
+            },
+            "properties": [
+              {
+                "id": "custom.displayMode",
+                "value": "color-background"
+              },
+              {
+                "id": "color"
+              },
+              {
+                "id": "thresholds",
+                "value": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "super-light-blue",
+                      "value": null
+                    },
+                    {
+                      "color": "blue",
+                      "value": 0
+                    },
+                    {
+                      "color": "yellow",
+                      "value": 10
+                    },
+                    {
+                      "color": "red",
+                      "value": 20
+                    },
+                    {
+                      "color": "orange",
+                      "value": 30
+                    },
+                    {
+                      "color": "red",
+                      "value": 70
+                    },
+                    {
+                      "color": "orange",
+                      "value": 80
+                    },
+                    {
+                      "color": "green",
+                      "value": 100
+                    }
+                  ]
+                }
+              },
+              {
+                "id": "custom.filterable",
+                "value": true
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 13,
+        "x": 11,
+        "y": 93
+      },
+      "id": 68,
+      "options": {
+        "showHeader": true,
+        "sortBy": [
+          {
+            "desc": true,
+            "displayName": "Статус"
+          }
+        ]
+      },
+      "pluginVersion": "7.3.4",
+      "targets": [
+        {
+          "expr": "mqobject_channel_channel_status_untyped{QMGR_NAME=~\"$QM\"} >0 and mqobject_channel_channel_status_untyped{QMGR_NAME=~\"$QM\"} <100",
+          "format": "table",
+          "instant": true,
+          "interval": "",
+          "legendFormat": "",
+          "refId": "A"
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Каналы не Running и Inactive",
+      "transformations": [
+        {
+          "id": "organize",
+          "options": {
+            "excludeByName": {
+              "__name__": true,
+              "instance": true,
+              "job": true,
+              "metrics_path": true,
+              "scheme": true,
+              "tsam_server_version": true
+            },
+            "indexByName": {
+              "MQ_OBJECT_NAME": 2,
+              "QMGR_NAME": 3,
+              "Time": 0,
+              "Value": 1,
+              "__name__": 4,
+              "host": 5,
+              "instance": 6,
+              "job": 7,
+              "metrics_path": 8,
+              "scheme": 9,
+              "tsam_server_version": 10
+            },
+            "renameByName": {
+              "MQ_OBJECT_NAME": "Канал",
+              "QMGR_NAME": "Менеджер",
+              "Time": "Обновлено",
+              "Value": "Статус",
+              "__name__": "",
+              "host": "Сервер"
+            }
+          }
+        }
+      ],
+      "type": "table"
+    },
+    {
+      "datasource": "mq",
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "fixed"
+          },
+          "custom": {
+            "align": null,
+            "displayMode": "auto",
+            "filterable": false
+          },
+          "links": [],
+          "mappings": [
+            {
+              "from": "",
+              "id": 1,
+              "text": "Running",
+              "to": "",
+              "type": 1,
+              "value": "100"
+            },
+            {
+              "from": "",
+              "id": 2,
+              "text": "Requesting",
+              "to": "",
+              "type": 1,
+              "value": "90"
+            },
+            {
+              "from": "",
+              "id": 3,
+              "text": "Paused",
+              "to": "",
+              "type": 1,
+              "value": "80"
+            },
+            {
+              "from": "",
+              "id": 4,
+              "text": "Binding",
+              "to": "",
+              "type": 1,
+              "value": "70"
+            },
+            {
+              "from": "",
+              "id": 5,
+              "text": "Starting",
+              "to": "",
+              "type": 1,
+              "value": "60"
+            },
+            {
+              "from": "",
+              "id": 6,
+              "text": "Initializing",
+              "to": "",
+              "type": 1,
+              "value": "50"
+            },
+            {
+              "from": "",
+              "id": 7,
+              "text": "Switching",
+              "to": "",
+              "type": 1,
+              "value": "40"
+            },
+            {
+              "from": "",
+              "id": 8,
+              "text": "Stopping",
+              "to": "",
+              "type": 1,
+              "value": "30"
+            },
+            {
+              "from": "",
+              "id": 9,
+              "text": "Retrying",
+              "to": "",
+              "type": 1,
+              "value": "20"
+            },
+            {
+              "from": "",
+              "id": 10,
+              "text": "Stopped",
+              "to": "",
+              "type": 1,
+              "value": "10"
+            },
+            {
+              "from": "",
+              "id": 11,
+              "text": "Inactive",
+              "to": "",
+              "type": 1,
+              "value": "0"
+            }
+          ],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "dark-green",
+                "value": null
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Статус"
+            },
+            "properties": [
+              {
+                "id": "custom.displayMode",
+                "value": "color-background"
+              },
+              {
+                "id": "color"
+              },
+              {
+                "id": "thresholds",
+                "value": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "super-light-blue",
+                      "value": null
+                    },
+                    {
+                      "color": "blue",
+                      "value": 0
+                    },
+                    {
+                      "color": "yellow",
+                      "value": 10
+                    },
+                    {
+                      "color": "red",
+                      "value": 20
+                    },
+                    {
+                      "color": "orange",
+                      "value": 30
+                    },
+                    {
+                      "color": "red",
+                      "value": 70
+                    },
+                    {
+                      "color": "orange",
+                      "value": 80
+                    },
+                    {
+                      "color": "green",
+                      "value": 100
+                    }
+                  ]
+                }
+              },
+              {
+                "id": "custom.filterable",
+                "value": true
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 13,
+        "x": 11,
+        "y": 97
+      },
+      "id": 46,
+      "options": {
+        "showHeader": true,
+        "sortBy": [
+          {
+            "desc": true,
+            "displayName": "Канал"
+          }
+        ]
+      },
+      "pluginVersion": "7.3.4",
+      "targets": [
+        {
+          "expr": "mqobject_channel_channel_status_untyped{QMGR_NAME=~\"$QM\"}",
+          "format": "table",
+          "instant": true,
+          "interval": "",
+          "legendFormat": "",
+          "refId": "A"
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Статус каналов",
+      "transformations": [
+        {
+          "id": "organize",
+          "options": {
+            "excludeByName": {
+              "__name__": true,
+              "instance": true,
+              "job": true,
+              "metrics_path": true,
+              "scheme": true,
+              "tsam_server_version": true
+            },
+            "indexByName": {
+              "MQ_OBJECT_NAME": 2,
+              "QMGR_NAME": 3,
+              "Time": 0,
+              "Value": 1,
+              "__name__": 4,
+              "host": 5,
+              "instance": 6,
+              "job": 7,
+              "metrics_path": 8,
+              "scheme": 9,
+              "tsam_server_version": 10
+            },
+            "renameByName": {
+              "MQ_OBJECT_NAME": "Канал",
+              "QMGR_NAME": "Менеджер",
+              "Time": "Обновлено",
+              "Value": "Статус",
+              "__name__": "",
+              "host": "Сервер"
+            }
+          }
+        }
+      ],
+      "type": "table"
+    },
+    {
+      "datasource": "mq",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": null,
+            "displayMode": "auto",
+            "filterable": false
+          },
+          "links": [],
+          "mappings": [
+            {
+              "from": "",
+              "id": 1,
+              "text": "Running",
+              "to": "",
+              "type": 1,
+              "value": "100"
+            },
+            {
+              "from": "",
+              "id": 2,
+              "text": "Requesting",
+              "to": "",
+              "type": 1,
+              "value": "90"
+            },
+            {
+              "from": "",
+              "id": 3,
+              "text": "Paused",
+              "to": "",
+              "type": 1,
+              "value": "80"
+            },
+            {
+              "from": "",
+              "id": 4,
+              "text": "Binding",
+              "to": "",
+              "type": 1,
+              "value": "70"
+            },
+            {
+              "from": "",
+              "id": 5,
+              "text": "Starting",
+              "to": "",
+              "type": 1,
+              "value": "60"
+            },
+            {
+              "from": "",
+              "id": 6,
+              "text": "Initializing",
+              "to": "",
+              "type": 1,
+              "value": "50"
+            },
+            {
+              "from": "",
+              "id": 7,
+              "text": "Switching",
+              "to": "",
+              "type": 1,
+              "value": "40"
+            },
+            {
+              "from": "",
+              "id": 8,
+              "text": "Stopping",
+              "to": "",
+              "type": 1,
+              "value": "30"
+            },
+            {
+              "from": "",
+              "id": 9,
+              "text": "Retrying",
+              "to": "",
+              "type": 1,
+              "value": "20"
+            },
+            {
+              "from": "",
+              "id": 10,
+              "text": "Stopped",
+              "to": "",
+              "type": 1,
+              "value": "10"
+            },
+            {
+              "from": "",
+              "id": 11,
+              "text": "Inactive",
+              "to": "",
+              "type": 1,
+              "value": "0"
+            }
+          ],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "dark-green",
+                "value": null
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Статус"
+            },
+            "properties": [
+              {
+                "id": "custom.displayMode",
+                "value": "color-background"
+              },
+              {
+                "id": "color"
+              },
+              {
+                "id": "thresholds",
+                "value": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "super-light-blue",
+                      "value": null
+                    },
+                    {
+                      "color": "blue",
+                      "value": 0
+                    },
+                    {
+                      "color": "yellow",
+                      "value": 10
+                    },
+                    {
+                      "color": "red",
+                      "value": 20
+                    },
+                    {
+                      "color": "orange",
+                      "value": 30
+                    },
+                    {
+                      "color": "red",
+                      "value": 70
+                    },
+                    {
+                      "color": "orange",
+                      "value": 80
+                    },
+                    {
+                      "color": "green",
+                      "value": 100
+                    }
+                  ]
+                }
+              },
+              {
+                "id": "custom.filterable",
+                "value": true
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Канал"
+            },
+            "properties": [
+              {
+                "id": "custom.filterable",
+                "value": true
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 14,
+        "w": 11,
+        "x": 0,
+        "y": 101
+      },
+      "id": 67,
+      "options": {
+        "showHeader": true,
+        "sortBy": [
+          {
+            "desc": true,
+            "displayName": "Количество"
+          }
+        ]
+      },
+      "pluginVersion": "7.3.4",
+      "targets": [
+        {
+          "expr": "count_values(\"Status\",mqobject_channel_channel_status_untyped{QMGR_NAME=~\"$QM\"}) by (MQ_OBJECT_NAME)",
+          "format": "table",
+          "instant": true,
+          "interval": "",
+          "legendFormat": "",
+          "refId": "A"
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Количество каналов по статусам",
+      "transformations": [
+        {
+          "id": "organize",
+          "options": {
+            "excludeByName": {},
+            "indexByName": {},
+            "renameByName": {
+              "MQ_OBJECT_NAME": "Канал",
+              "Status": "Статус",
+              "Time": "Время",
+              "Value": "Количество"
+            }
+          }
+        }
+      ],
+      "type": "table"
+    },
+    {
+      "aliasColors": {},
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": "mq",
+      "description": "Статус - Код: Running - 100,  Requesting - 90, Paused - 80, Binding - 70,  Starting - 60,  Initializing - 50, Switching - 40, Stopping - 30, Retrying - 20, Stopped - 10,  Inactive - 0",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "fixed"
+          },
+          "custom": {
+            "align": null,
+            "displayMode": "auto",
+            "filterable": false
+          },
+          "links": [],
+          "mappings": [
+            {
+              "from": "",
+              "id": 1,
+              "text": "Running",
+              "to": "",
+              "type": 1,
+              "value": "100"
+            },
+            {
+              "from": "",
+              "id": 2,
+              "text": "Requesting",
+              "to": "",
+              "type": 1,
+              "value": "90"
+            },
+            {
+              "from": "",
+              "id": 3,
+              "text": "Paused",
+              "to": "",
+              "type": 1,
+              "value": "80"
+            },
+            {
+              "from": "",
+              "id": 4,
+              "text": "Binding",
+              "to": "",
+              "type": 1,
+              "value": "70"
+            },
+            {
+              "from": "",
+              "id": 5,
+              "text": "Starting",
+              "to": "",
+              "type": 1,
+              "value": "60"
+            },
+            {
+              "from": "",
+              "id": 6,
+              "text": "Initializing",
+              "to": "",
+              "type": 1,
+              "value": "50"
+            },
+            {
+              "from": "",
+              "id": 7,
+              "text": "Switching",
+              "to": "",
+              "type": 1,
+              "value": "40"
+            },
+            {
+              "from": "",
+              "id": 8,
+              "text": "Stopping",
+              "to": "",
+              "type": 1,
+              "value": "30"
+            },
+            {
+              "from": "",
+              "id": 9,
+              "text": "Retrying",
+              "to": "",
+              "type": 1,
+              "value": "20"
+            },
+            {
+              "from": "",
+              "id": 10,
+              "text": "Stopped",
+              "to": "",
+              "type": 1,
+              "value": "10"
+            },
+            {
+              "from": "",
+              "id": 11,
+              "text": "Inactive",
+              "to": "",
+              "type": 1,
+              "value": "0"
+            }
+          ],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "dark-green",
+                "value": null
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Статус"
+            },
+            "properties": [
+              {
+                "id": "custom.displayMode",
+                "value": "color-background"
+              },
+              {
+                "id": "color"
+              },
+              {
+                "id": "thresholds",
+                "value": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "super-light-blue",
+                      "value": null
+                    },
+                    {
+                      "color": "blue",
+                      "value": 0
+                    },
+                    {
+                      "color": "yellow",
+                      "value": 10
+                    },
+                    {
+                      "color": "red",
+                      "value": 20
+                    },
+                    {
+                      "color": "orange",
+                      "value": 30
+                    },
+                    {
+                      "color": "red",
+                      "value": 70
+                    },
+                    {
+                      "color": "orange",
+                      "value": 80
+                    },
+                    {
+                      "color": "green",
+                      "value": 100
+                    }
+                  ]
+                }
+              },
+              {
+                "id": "custom.filterable",
+                "value": true
+              }
+            ]
+          }
+        ]
+      },
+      "fill": 1,
+      "fillGradient": 0,
+      "gridPos": {
+        "h": 10,
+        "w": 13,
+        "x": 11,
+        "y": 105
+      },
+      "hiddenSeries": false,
+      "id": 70,
+      "legend": {
+        "alignAsTable": true,
+        "avg": false,
+        "current": true,
+        "max": true,
+        "min": true,
+        "show": true,
+        "total": false,
+        "values": true
+      },
+      "lines": true,
+      "linewidth": 1,
+      "nullPointMode": "null as zero",
+      "options": {
+        "alertThreshold": true
+      },
+      "percentage": false,
+      "pluginVersion": "7.3.4",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "expr": "mqobject_channel_channel_status_untyped{QMGR_NAME=~\"$QM\"} >0 and mqobject_channel_channel_status_untyped{QMGR_NAME=~\"$QM\"} <100",
+          "format": "time_series",
+          "instant": false,
+          "interval": "",
+          "legendFormat": "{{QMGR_NAME}} :: {{MQ_OBJECT_NAME}}",
+          "refId": "A"
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "Каналы не Running и Inactive",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual"
+      },
+      "transformations": [
+        {
+          "id": "organize",
+          "options": {
+            "excludeByName": {
+              "__name__": true,
+              "instance": true,
+              "job": true,
+              "metrics_path": true,
+              "scheme": true,
+              "tsam_server_version": true
+            },
+            "indexByName": {
+              "MQ_OBJECT_NAME": 2,
+              "QMGR_NAME": 3,
+              "Time": 0,
+              "Value": 1,
+              "__name__": 4,
+              "host": 5,
+              "instance": 6,
+              "job": 7,
+              "metrics_path": 8,
+              "scheme": 9,
+              "tsam_server_version": 10
+            },
+            "renameByName": {
+              "MQ_OBJECT_NAME": "Канал",
+              "QMGR_NAME": "Менеджер",
+              "Time": "Обновлено",
+              "Value": "Статус",
+              "__name__": "",
+              "host": "Сервер"
+            }
+          }
+        }
+      ],
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    }
+  ],
+  "refresh": "30s",
+  "schemaVersion": 26,
+  "style": "dark",
+  "tags": [],
+  "templating": {
+    "list": [
+      {
+        "allValue": "",
+        "current": {
+          "selected": true,
+          "text": [
+            "All"
+          ],
+          "value": [
+            "$__all"
+          ]
+        },
+        "datasource": "mq",
+        "definition": "label_values(QMGR_NAME)",
+        "error": null,
+        "hide": 0,
+        "includeAll": true,
+        "label": "QM",
+        "multi": true,
+        "name": "QM",
+        "options": [],
+        "query": "label_values(QMGR_NAME)",
+        "refresh": 2,
+        "regex": "",
+        "skipUrlSync": false,
+        "sort": 1,
+        "tagValuesQuery": "",
+        "tags": [],
+        "tagsQuery": "",
+        "type": "query",
+        "useTags": false
+      },
+      {
+        "allValue": null,
+        "current": {
+          "selected": true,
+          "text": [
+            "All"
+          ],
+          "value": [
+            "$__all"
+          ]
+        },
+        "datasource": "mq",
+        "definition": "label_values(mqobject_queue_queue_depth_messages{QMGR_NAME=~\"$QM\"},MQ_OBJECT_NAME)",
+        "error": null,
+        "hide": 0,
+        "includeAll": true,
+        "label": "Queue",
+        "multi": true,
+        "name": "Queue",
+        "options": [],
+        "query": "label_values(mqobject_queue_queue_depth_messages{QMGR_NAME=~\"$QM\"},MQ_OBJECT_NAME)",
+        "refresh": 2,
+        "regex": "",
+        "skipUrlSync": false,
+        "sort": 1,
+        "tagValuesQuery": "",
+        "tags": [],
+        "tagsQuery": "",
+        "type": "query",
+        "useTags": false
+      },
+      {
+        "allValue": null,
+        "current": {
+          "selected": false,
+          "text": [
+            "SYSTEM.CLUSTER.TRANSMIT.QUEUE"
+          ],
+          "value": [
+            "SYSTEM.CLUSTER.TRANSMIT.QUEUE"
+          ]
+        },
+        "error": null,
+        "hide": 0,
+        "includeAll": false,
+        "label": "sysqueue",
+        "multi": false,
+        "name": "sysqueue",
+        "options": [
+          {
+            "selected": false,
+            "text": "SYSTEM.DEAD.LETTER.QUEUE|SYSTEM.CLUSTER.TRANSMIT.QUEUE",
+            "value": "SYSTEM.DEAD.LETTER.QUEUE|SYSTEM.CLUSTER.TRANSMIT.QUEUE"
+          }
+        ],
+        "query": "SYSTEM.DEAD.LETTER.QUEUE|SYSTEM.CLUSTER.TRANSMIT.QUEUE",
+        "queryValue": "",
+        "skipUrlSync": false,
+        "type": "custom"
+      },
+      {
+        "allValue": null,
+        "current": {
+          "isNone": true,
+          "selected": false,
+          "text": "None",
+          "value": ""
+        },
+        "datasource": "mq",
+        "definition": "label_values({__name__=~\"mqobject_queue_queue_depth_messages{QMGR_NAME}|mqobject_queue_queue_depth_messages{MQ_OBJECT_NAME}\"}, name)",
+        "error": null,
+        "hide": 2,
+        "includeAll": false,
+        "label": "QM_Queue",
+        "multi": false,
+        "name": "QM_Queue",
+        "options": [
+          {
+            "isNone": true,
+            "selected": true,
+            "text": "None",
+            "value": ""
+          }
+        ],
+        "query": "label_values({__name__=~\"mqobject_queue_queue_depth_messages{QMGR_NAME}|mqobject_queue_queue_depth_messages{MQ_OBJECT_NAME}\"}, name)",
+        "refresh": 0,
+        "regex": "",
+        "skipUrlSync": false,
+        "sort": 0,
+        "tagValuesQuery": "",
+        "tags": [],
+        "tagsQuery": "",
+        "type": "query",
+        "useTags": false
+      }
+    ]
+  },
+  "time": {
+    "from": "now-15m",
+    "to": "now"
+  },
+  "timepicker": {
+    "refresh_intervals": [
+      "10s",
+      "30s",
+      "1m",
+      "5m",
+      "15m",
+      "30m",
+      "1h",
+      "2h",
+      "1d"
+    ]
+  },
+  "timezone": "",
+  "title": "MSGMQ_v3 TEST",
+  "uid": "QJyp0f3Gz",
+  "version": 17
+}
