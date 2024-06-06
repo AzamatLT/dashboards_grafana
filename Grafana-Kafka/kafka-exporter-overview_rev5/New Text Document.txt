@@ -1,0 +1,3 @@
+7589
+
+Kafka resource usage and throughput

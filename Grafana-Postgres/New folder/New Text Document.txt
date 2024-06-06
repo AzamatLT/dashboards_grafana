@@ -1,0 +1,3 @@
+A simple PostgreSQL Dashboard with data collected by this simple script www.xenialab.it/meo/web/pub/pgstatspack-2.3.3.zip Works for PostgreSQL 8.x to 12
+
+11056

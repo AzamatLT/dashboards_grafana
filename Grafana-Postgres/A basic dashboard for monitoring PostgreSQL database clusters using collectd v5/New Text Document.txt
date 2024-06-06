@@ -1,0 +1,4 @@
+9948
+
+A basic dashboard for monitoring PostgreSQL database clusters using collectd v5+, TimescaleDB/PostgreSQL v10+ and Grafana v6+
+This dashboard is meant to help visualize PostgreSQL database KPIs, and scale easily with the addition of multiple DB hosts and PostgreSQL databases. This dashboard uses TimescaleDB features for querying and displaying data.
